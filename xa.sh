@@ -6,7 +6,6 @@ get_new_ipv6() {
     echo "$random_ipv6"
 }
 
-
 # Function to update 3proxy configuration with a new IPv6 address
 update_3proxy_ipv6_config() {
     new_ipv6=$1
@@ -16,8 +15,7 @@ update_3proxy_ipv6_config() {
 # Function to restart 3proxy
 restart_3proxy() {
     /usr/local/etc/3proxy/bin/3proxy /usr/local/etc/3proxy/3proxy.cfg
-}l
-restart_3proxy
+}
 
 echo "Rotating IPv6 addresses for 3proxy every 10 minutes..."
 
