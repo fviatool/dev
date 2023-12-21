@@ -2,7 +2,7 @@
 
 # Đường dẫn làm việc và Backup
 WORKDIR="/root"
-BACKUP_DIR="/"
+BACKUP_DIR="/home"  # Thay đổi đường dẫn này
 BACKUP_FILENAME="full_backup_$(date +"%Y%m%d_%H%M%S").tar.gz"
 
 # Hàm tạo backup toàn bộ hệ thống
